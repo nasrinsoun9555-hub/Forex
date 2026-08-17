@@ -1,176 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To NASRIN SOUN</title>
 
-    <title>Welcome To NASRIN SOUN</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    html, body {
+      background: #000;
+      width: 100%;
+      min-height: 100%;
+    }
 
-        body {
-            background: #111;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            padding: 20px;
-        }
+    .website {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
 
-        .website {
-            width: 100%;
-            max-width: 900px;
-        }
+    .website img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-        /* Main Image */
-        .main-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: 0.3s ease;
-        }
+    /* Transparent clickable areas over the buttons */
+    .link {
+      position: absolute;
+      left: 9.55%;
+      width: 78.8%;
+      height: 6.75%;
+      display: block;
+      z-index: 10;
+      border-radius: 20px;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-        .main-image:hover {
-            transform: scale(1.01);
-            opacity: 0.95;
-        }
+    .community { top: 46.75%; }
+    .telegram  { top: 54.20%; }
+    .signal    { top: 61.65%; }
+    .learning  { top: 69.10%; }
+    .facebook  { top: 76.55%; }
+    .youtube   { top: 84.00%; }
 
-        /* Link buttons */
-        .links {
-            margin-top: 20px;
-            display: grid;
-            gap: 12px;
-        }
-
-        .link-btn {
-            display: block;
-            text-decoration: none;
-            text-align: center;
-            padding: 16px 20px;
-            border: 1px solid #d6a84f;
-            border-radius: 12px;
-            color: white;
-            background: linear-gradient(
-                135deg,
-                #171717,
-                #29200f
-            );
-            font-family: Arial, sans-serif;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.3s ease;
-        }
-
-        .link-btn:hover {
-            background: #d6a84f;
-            color: #111;
-            transform: translateY(-2px);
-        }
-
-        /* Mobile */
-        @media (max-width: 600px) {
-
-            body {
-                padding: 8px;
-            }
-
-            .main-image {
-                border-radius: 8px;
-            }
-
-            .link-btn {
-                font-size: 15px;
-                padding: 14px;
-            }
-        }
-    </style>
+    /* Small visual feedback when the user touches a button */
+    .link:active {
+      background: rgba(255, 255, 255, 0.08);
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="website">
+  <main class="website">
 
-    <!-- =========================
-         YOUR MAIN IMAGE
-         ========================= -->
+    <!-- Main image -->
+    <img src="website.png" alt="Welcome To NASRIN SOUN">
 
-    <!--
-      ប្តូរ website.png ប្រសិនបើឈ្មោះរូបអ្នកខុស
-    -->
-
-    <a href="https://t.me/journeywitme" target="_blank">
-        <img
-            src="website.png"
-            alt="Welcome To NASRIN SOUN"
-            class="main-image"
-        >
+    <!-- 1. Community -->
+    <a
+      class="link community"
+      href="https://t.me/journeywitme"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Community">
     </a>
 
+    <!-- 2. Telegram -->
+    <a
+      class="link telegram"
+      href="https://t.me/Nasrin_Suon"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Telegram">
+    </a>
 
-    <!-- =========================
-         LINKS
-         ========================= -->
+    <!-- 3. Signal -->
+    <a
+      class="link signal"
+      href="https://t.me/Learning_Forex_Nasrin"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Signal">
+    </a>
 
-    <div class="links">
+    <!-- 4. Learning Forex -->
+    <a
+      class="link learning"
+      href="https://t.me/open_acc026"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Learning Forex">
+    </a>
 
-        <a
-            class="link-btn"
-            href="https://t.me/journeywitme"
-            target="_blank"
-        >
-            COMMUNITY
-        </a>
+    <!-- 5. Facebook Page -->
+    <a
+      class="link facebook"
+      href="https://www.facebook.com/profile.php?id=61587144250978"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook Page">
+    </a>
 
-        <a
-            class="link-btn"
-            href="https://t.me/Nasrin_Suon"
-            target="_blank"
-        >
-            TELEGRAM
-        </a>
+    <!-- 6. YouTube -->
+    <a
+      class="link youtube"
+      href="https://www.youtube.com/@nasrinsoun4532"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="YouTube">
+    </a>
 
-        <a
-            class="link-btn"
-            href="https://t.me/Learning_Forex_Nasrin"
-            target="_blank"
-        >
-            SIGNAL
-        </a>
-
-        <a
-            class="link-btn"
-            href="https://t.me/open_acc026"
-            target="_blank"
-        >
-            LEARNING FOREX
-        </a>
-
-        <a
-            class="link-btn"
-            href="https://www.facebook.com/profile.php?id=61587144250978"
-            target="_blank"
-        >
-            FACEBOOK PAGE
-        </a>
-
-        <a
-            class="link-btn"
-            href="https://www.youtube.com/@nasrinsoun4532"
-            target="_blank"
-        >
-            YOUTUBE
-        </a>
-
-    </div>
-
-</div>
+  </main>
 
 </body>
 </html>
