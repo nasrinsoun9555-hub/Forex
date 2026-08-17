@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome To NASRIN SOUN</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .website {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        /* Main Image */
+        .main-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .main-image:hover {
+            transform: scale(1.01);
+            opacity: 0.95;
+        }
+
+        /* Link buttons */
+        .links {
+            margin-top: 20px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .link-btn {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 16px 20px;
+            border: 1px solid #d6a84f;
+            border-radius: 12px;
+            color: white;
+            background: linear-gradient(
+                135deg,
+                #171717,
+                #29200f
+            );
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .link-btn:hover {
+            background: #d6a84f;
+            color: #111;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 8px;
+            }
+
+            .main-image {
+                border-radius: 8px;
+            }
+
+            .link-btn {
+                font-size: 15px;
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="website">
+
+    <!-- =========================
+         YOUR MAIN IMAGE
+         ========================= -->
+
+    <!--
+      ប្តូរ website.png ប្រសិនបើឈ្មោះរូបអ្នកខុស
+    -->
+
+    <a href="https://t.me/journeywitme" target="_blank">
+        <img
+            src="website.png"
+            alt="Welcome To NASRIN SOUN"
+            class="main-image"
+        >
+    </a>
+
+
+    <!-- =========================
+         LINKS
+         ========================= -->
+
+    <div class="links">
+
+        <a
+            class="link-btn"
+            href="https://t.me/journeywitme"
+            target="_blank"
+        >
+            COMMUNITY
+        </a>
+
+        <a
+            class="link-btn"
+            href="https://t.me/Nasrin_Suon"
+            target="_blank"
+        >
+            TELEGRAM
+        </a>
+
+        <a
+            class="link-btn"
+            href="https://t.me/Learning_Forex_Nasrin"
+            target="_blank"
+        >
+            SIGNAL
+        </a>
+
+        <a
+            class="link-btn"
+            href="https://t.me/open_acc026"
+            target="_blank"
+        >
+            LEARNING FOREX
+        </a>
+
+        <a
+            class="link-btn"
+            href="https://www.facebook.com/profile.php?id=61587144250978"
+            target="_blank"
+        >
+            FACEBOOK PAGE
+        </a>
+
+        <a
+            class="link-btn"
+            href="https://www.youtube.com/@nasrinsoun4532"
+            target="_blank"
+        >
+            YOUTUBE
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
